@@ -31,4 +31,26 @@ body {
  width: 40px;
  height: 40px;
  background-color: white;
+ position: relative;
+}
+
+.options-container {
+  display: flex;
+  background-color: rgb(66, 28, 201);
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  right: 10px;
+  bottom: 10px;
+
+}
+
+.number-option {
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  background-color: lawngreen;
+  text-align: center;
+  cursor: pointer;
 }
