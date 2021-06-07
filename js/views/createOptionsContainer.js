@@ -1,5 +1,6 @@
 import createHtmlElement from '../functions/createHtmlElement.js';
 import renderNumber from './renderNumber.js';
+import clearNumber from './clearNumber.js';
 
 export default function createOptionsContainer(element, options) {
   const optionsContainer = createHtmlElement('div', { className: 'options-container' });
@@ -12,5 +13,12 @@ export default function createOptionsContainer(element, options) {
     span.addEventListener('click', (event) => renderNumber(event, element));
     optionsContainer.appendChild(span);
   });
+  const clearAttributes = {
+    className: 'number-option',
+    innerHTML: 'Limpar',
+  };
+  const cleanNumber = createHtmlElement('span', clearAttributes);
+  cleanNumber.addEventListener('click', (event) => clearNumber(event, element));
+  optionsContainer.appendChild(cleanNumber);
   element.appendChild(optionsContainer);
 }
