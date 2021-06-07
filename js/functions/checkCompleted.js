@@ -1,8 +1,4 @@
-import gameState from '../index.js';
-import cards from '../cards/cards.js';
-
-export default function checkCompleted() {
-  const cardMatrix = cards[`level${gameState.level}`];
+export default function checkCompleted(cardMatrix) {
   let bool = true;
   cardMatrix.forEach((row) =>
     row.forEach((number) => {

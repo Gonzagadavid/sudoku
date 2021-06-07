@@ -1,8 +1,4 @@
-import cards from '../cards/cards.js';
-import gameState from '../index.js';
-
-export default function getOptions(x, y) {
-  const cardMatrix = cards[`level${gameState.level}`];
+export default function getOptions(x, y, cardMatrix) {
   const startX = x < 3 ? 0 : x < 6 ? 3 : 6;
   const startY = y < 3 ? 0 : y < 6 ? 3 : 6;
   const options = [1, 2, 3, 4, 5, 6, 7, 8, 9];
