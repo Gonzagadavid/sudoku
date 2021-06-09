@@ -4,10 +4,13 @@ import createCardGame from './views/createCardGame.js';
 
 const gameState = { difficulty: 'easy' };
 export default gameState;
+
 const content = document.getElementById('content');
 const title = createHtmlElement('h1', { innerHTML: 'Sudoku' });
 content.appendChild(title);
+
 createBtnContainer();
+
 const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
 fetch(url)
   .then((resp) => resp.json())
