@@ -19,7 +19,9 @@ function addBtn(parentElement, value) {
 }
 
 export default function createBtnContainer() {
-  const btnContainer = document.getElementById('btn-container');
+  const content = document.getElementById('content');
+  const btnContainer = createHtmlElement('div', { className: 'btn-container' });
   const arrayDifficult = ['easy', 'medium', 'hard', 'random'];
   arrayDifficult.forEach((dif) => addBtn(btnContainer, dif));
+  content.appendChild(btnContainer);
 }
