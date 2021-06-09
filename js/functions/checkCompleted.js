@@ -1,6 +1,6 @@
-export default function checkCompleted(cardMatrix) {
+export default function checkCompleted(board) {
   let bool = true;
-  cardMatrix.forEach((row) =>
+  board.forEach((row) =>
     row.forEach((number) => {
       if (number === 0) bool = false;
     })
