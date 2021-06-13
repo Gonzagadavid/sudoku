@@ -2,21 +2,21 @@ import createHtmlElement from '../functions/createHtmlElement.js';
 import renderNumber from './renderNumber.js';
 import clearNumber from './clearNumber.js';
 
-function createSpan(number, optionsContainer) {
+function createSpan(number, optionsContainer, element, board) {
   const spanAttributes = { className: 'number-option', innerHTML: number };
   const span = createHtmlElement('span', spanAttributes);
   span.addEventListener('click', (event) => renderNumber(event, element, board));
   optionsContainer.appendChild(span);
 }
 
-function createContainer(options) {
+function createContainer(options, element, board) {
   const optionsContainer = createHtmlElement('div', { className: 'options-container' });
-  options.forEach((number) => createSpan(number, optionsContainer));
+  options.forEach((number) => createSpan(number, optionsContainer, element, board));
   return optionsContainer;
 }
 
 export default function createOptionsContainer(element, options, board) {
-  const optionsContainer = createContainer(options);
+  const optionsContainer = createContainer(options, element, board);
   const clearAttributes = { className: 'number-option', innerHTML: 'Limpar' };
   const cleanNumber = createHtmlElement('span', clearAttributes);
   cleanNumber.addEventListener('click', (event) => clearNumber(event, element, board));

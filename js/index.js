@@ -1,6 +1,7 @@
 import createHtmlElement from './functions/createHtmlElement.js';
 import createBtnContainer from './views/createBtnContainer.js';
 import createCardGame from './views/createCardGame.js';
+import createClearBtn from './views/createClearBtn.js';
 
 const gameState = { difficulty: 'easy' };
 export default gameState;
@@ -15,6 +16,8 @@ const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficult
 fetch(url)
   .then((resp) => resp.json())
   .then((resp) => {
-    const card = createCardGame(resp);
+    const { board } = resp;
+    const card = createCardGame(board);
     content.appendChild(card);
+    content.appendChild(createClearBtn(board));
   });

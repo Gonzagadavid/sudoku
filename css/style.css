@@ -5,11 +5,19 @@ body {
 #content {
   width: 100vw;
   height: 100vh;
-  background-color: aqua;
+  background-color: rgb(192, 178, 178);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 100px;
 }
 
 .card-container {
