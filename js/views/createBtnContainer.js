@@ -3,7 +3,7 @@ import nextLevel from '../functions/nextLevel.js';
 import gameState from '../index.js';
 
 function renderDifficult(event) {
-  gameState.difficulty = event.target.value;
+  gameState.difficulty = event.target.value.toLowerCase();
   nextLevel();
 }
 
@@ -21,7 +21,7 @@ function addBtn(parentElement, value) {
 export default function createBtnContainer() {
   const content = document.getElementById('content');
   const btnContainer = createHtmlElement('div', { className: 'btn-container' });
-  const arrayDifficult = ['easy', 'medium', 'hard', 'random'];
+  const arrayDifficult = ['EASY', 'MEDIUM', 'HARD', 'RANDOM'];
   arrayDifficult.forEach((dif) => addBtn(btnContainer, dif));
   content.appendChild(btnContainer);
 }

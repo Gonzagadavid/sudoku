@@ -7,7 +7,7 @@ const gameState = { difficulty: 'easy' };
 export default gameState;
 
 const content = document.getElementById('content');
-const title = createHtmlElement('h1', { innerHTML: 'Sudoku' });
+const title = createHtmlElement('h1', { innerHTML: 'Sudoku', className: 'title' });
 content.appendChild(title);
 
 createBtnContainer();
