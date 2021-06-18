@@ -4,9 +4,9 @@ import renderOptions from '../functions/renderOptions.js';
 function fillLine(axleY, y, x, board) {
   const colAttributes = { title: `x=${x} y=${y}`, className: 'number', innerHTML: axleY || '' };
   const number = createHtmlElement('div', colAttributes);
-  if (axleY === 0) { 
+  if (axleY === 0) {
     number.addEventListener('click', (event) => renderOptions(event, board));
-    number.classList.add('try')
+    number.classList.add('try');
   }
   return number;
 }
