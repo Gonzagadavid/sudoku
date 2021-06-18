@@ -1,6 +1,11 @@
 import createHtmlElement from '../functions/createHtmlElement.js';
-import nextLevel from '../functions/nextLevel.js';
 import gameState from '../index.js';
+import fetchBoard from '../functions/fetchBoard.js';
+
+function nextLevel() {
+  const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
+  fetchBoard(url, true);
+}
 
 function renderDifficult(event) {
   gameState.difficulty = event.target.value.toLowerCase();

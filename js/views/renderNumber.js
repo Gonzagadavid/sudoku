@@ -1,5 +1,5 @@
-import checkCompleted from '../functions/checkCompleted.js';
-import nextLevel from '../functions/nextLevel.js';
+// import checkCompleted from '../functions/checkCompleted.js';
+// import nextLevel from '../functions/nextLevel.js';
 
 export default function renderNumber(event, element, board) {
   const x = +element.title.replace(/(x=)|y=\d/g, '');
@@ -7,5 +7,5 @@ export default function renderNumber(event, element, board) {
   const value = +event.target.innerHTML;
   board[x][y] = value;
   element.innerHTML = value;
-  if (checkCompleted(board)) nextLevel();
+  // if (checkCompleted(board)) nextLevel();
 }
