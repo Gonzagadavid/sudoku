@@ -1,5 +1,6 @@
 import createCardGame from '../views/createCardGame.js';
 import createClearBtn from '../views/createClearBtn.js';
+import btnSelect from './btnSelect.js';
 
 function clearCard() {
   const content = document.getElementById('content');
@@ -17,4 +18,5 @@ export default async function fetchBoard(url, clear) {
   const card = createCardGame(board);
   content.appendChild(card);
   content.appendChild(createClearBtn(board));
+  btnSelect();
 }

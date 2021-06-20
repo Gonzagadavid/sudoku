@@ -2,13 +2,21 @@ import createHtmlElement from '../functions/createHtmlElement.js';
 import fetchBoard from '../functions/fetchBoard.js';
 import gameState from '../index.js';
 
+function restart(event, container) {
+  const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
+  container.remove();
+  fetchBoard(url, true);
+}
+
 export default function finishedContainer() {
+  const content = document.getElementById('content');
   const container = createHtmlElement('div', { className: 'finished-contaienr' });
   container.appendChild(createHtmlElement('h2', { innerHTML: 'Finished' }));
-  const text = `Parabéns! Você concluiu no level ${gameState.difficulty}.`;
+  const text = `Parabéns! Você concluiu no level ${gameState.difficulty.toUpperCase()}.`;
   container.appendChild(createHtmlElement('p', { innerHTML: text }));
   const btnAttributes = { innerHTML: 'Joga novamente', className: 'btn-finished' };
   const btn = createHtmlElement('button', btnAttributes);
-  const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
-  btn.addEventListener('click', () => fetchBoard(url, true));
+  btn.addEventListener('click', (event) => restart(event, container));
+  container.appendChild(btn);
+  content.appendChild(container);
 }

@@ -12,5 +12,5 @@ content.appendChild(title);
 createBtnContainer();
 
 const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
-
+console.log(url);
 fetchBoard(url);

@@ -10,7 +10,7 @@ export default function createClearBtn(board) {
   const clearContainer = createHtmlElement('div', { className: 'clear-container' });
   const clearBtnAttributes = {
     className: 'clear-btn',
-    innerHTML: 'LIMPAR',
+    innerHTML: 'CLEAR BOARD',
     onclick: (event) => clearBoard(event, board),
   };
   const clearBtn = createHtmlElement('button', clearBtnAttributes);
