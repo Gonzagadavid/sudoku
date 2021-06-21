@@ -14,7 +14,6 @@ export default async function fetchBoard(url, clear) {
   if (!response.ok) throw new Error('A requisão do jogo falhou');
   const objBoard = await response.json();
   const { board } = objBoard;
-  console.log(board);
   if (clear) clearCard();
   const card = createCardGame(board);
   content.appendChild(card);
