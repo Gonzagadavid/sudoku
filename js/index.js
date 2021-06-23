@@ -14,7 +14,3 @@ createBtnContainer();
 
 const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
 fetchBoard(url);
-
-setTimeout(() => {
-  finishedContainer();
-}, 2000);
