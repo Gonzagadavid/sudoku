@@ -14,7 +14,7 @@ export default function finishedContainer() {
   container.appendChild(createHtmlElement('h2', { innerHTML: 'Finished' }));
   const text = `Parabéns! Você concluiu no level ${gameState.difficulty.toUpperCase()}.`;
   container.appendChild(createHtmlElement('p', { innerHTML: text }));
-  const btnAttributes = { innerHTML: 'Joga novamente', className: 'btn-finished' };
+  const btnAttributes = { innerHTML: 'Jogar novamente', className: 'btn-finished' };
   const btn = createHtmlElement('button', btnAttributes);
   btn.addEventListener('click', (event) => restart(event, container));
   container.appendChild(btn);

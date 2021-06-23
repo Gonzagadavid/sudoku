@@ -4,15 +4,15 @@ body {
 
 button {
   border: none;
-  background-color: rgb(66, 28, 201);
+  background-color: rgba(248, 248, 248, 0.6);
   font-family: roboto;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 15px;
   padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 8px;
   cursor: pointer;
-  /* border: solid 0.5px white; */
-  box-shadow: 0px 0px 4px white;
+  margin: 5px;
+  box-shadow: 0 0 2px black;
 }
 
 .title {
@@ -21,11 +21,12 @@ button {
    margin: 0;
    color: white;
    letter-spacing: 15px;
+   text-shadow: 2px 2px 10px black;
  }
 #content {
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(0deg, rgb(36, 54, 106), rgb(15, 4, 21));
+  background: linear-gradient(0deg, rgb(45, 132, 225), rgb(0, 30, 56));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -35,7 +36,7 @@ button {
 .btn-container {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 400px;
   height: 50px;
 }
@@ -43,11 +44,12 @@ button {
 .card-container {
   display: flex;
   flex-direction: column;
-  width: 460px;
-  height: 470px;
- background-color: rgb(126, 121, 121);
-
-  /* border: blue 2px solid; */
+  justify-content: center;
+  align-items: center;
+  width: 464px;
+  height: 472px;
+  background-color: black;
+  box-shadow: 0 0 20px black;
 }
 
 .row-card {
@@ -56,17 +58,17 @@ button {
 }
 
 .row-card:nth-child(3) .number {
-  border-bottom: rgb(240, 69, 17) 1px solid;
+  border-bottom: black 1px solid;
 }
 .row-card:nth-child(6) .number {
-  border-bottom: rgb(240, 69, 17) 1px solid;
+  border-bottom: black 1px solid;
 } 
 
 .row-card:nth-child(4) .number {
-  border-top: rgb(240, 69, 17) 1px solid;
+  border-top: black 1px solid;
 }
 .row-card:nth-child(7) .number {
-  border-top: rgb(240, 69, 17)  1px solid;
+  border-top: black  1px solid;
 }
 
 
@@ -74,35 +76,35 @@ button {
  display: flex;
  align-items: center;
  justify-content: center;
- border: rgb(126, 121, 121) solid 0.05px;
+ border: rgb(135, 169, 233) solid 0.05px;
  width: 50px;
  height: 50px;
  position: relative;
  font-size: 35px;
- color: rgb(120, 140, 206);
+ color: rgb(0, 0, 0);
  font-family: roboto;
  font-weight: lighter;
  /* border-radius: 5px; */
- background-color: rgb(36, 34, 34);
+ background-color: rgb(255, 255, 255);
 }
 .number:nth-child(3) {
-  border-right: rgb(240, 69, 17)  1px solid;
+  border-right: black  1px solid;
 }
 .number:nth-child(6) {
-  border-right: rgb(240, 69, 17)  1px solid;
+  border-right: black  1px solid;
 }
 
 .number:nth-child(4) {
-  border-left: rgb(240, 69, 17) 1px solid;
+  border-left: black 1px solid;
 }
 .number:nth-child(7) {
-  border-left: rgb(240, 69, 17)  1px solid;
+  border-left: black  1px solid;
 }
 
 .options-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: rgb(66, 28, 201);
+  background-color: rgb(8, 5, 151);
   position: absolute;
   width: 80px;
   height: 60px;
@@ -114,7 +116,7 @@ button {
 
 .try {
   cursor: pointer;
-  color: rgb(246, 245, 247);;
+  color: rgb(7, 62, 124);
 }
 
 .number-option {
@@ -138,12 +140,15 @@ button {
   height: 200px;
   font-size: 20px;
   position: fixed;
-  background-color: rgb(51, 79, 170);
+  background-color: rgb(17, 53, 170);
   color: white;
+  font-family: roboto;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  border-radius: 10px;
 }
 
 .selected {
-  background-color: red;
+  background-color: rgb(250, 111, 69);
 }
 .number::-webkit-textfield-decoration-container {
   display: none;
@@ -155,5 +160,5 @@ button {
 
 @font-face {
   font-family: roboto;
-  src: url('../fonts/Roboto/Roboto-Light.ttf');
+  src: url('../fonts/Roboto/Roboto-Medium.ttf');
 }
