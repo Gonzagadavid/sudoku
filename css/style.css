@@ -33,6 +33,29 @@ button {
   flex-direction: column;
 }
 
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: white;
+  font-size: 25px;
+  font-family: roboto;
+  opacity: 60%;
+}
+
+.contact-container a {
+  color: white;
+  font-size: 70px;
+}
+
+.contact-container p {
+  margin: 0;
+}
+
 .btn-container {
   display: flex;
   justify-content: space-around;
