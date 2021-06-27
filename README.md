@@ -9,7 +9,7 @@
 <img src="./images/SUDOKU.gif"/> 
 
  
- <a href="https://gonzagadavid.github.io/sudoku/">Página do Projeto<a>
+## Acesse a <a href="https://gonzagadavid.github.io/sudoku/">Página do Projeto<a>
  
 ### Características do projeto:
 
