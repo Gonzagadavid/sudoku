@@ -1,17 +1,17 @@
-import createHtmlElement from './functions/createHtmlElement.js';
 import fetchBoard from './functions/fetchBoard.js';
 import createBtnContainer from './views/createBtnContainer.js';
 import createContactContainer from './views/createContactContainer.js';
+import insertTitle from './views/insertTitle.js';
 
 const gameState = { difficulty: 'easy' };
 export default gameState;
 
 const content = document.getElementById('content');
-content.appendChild(createContactContainer());
-const title = createHtmlElement('h1', { innerHTML: 'Sudoku', className: 'title' });
-content.appendChild(title);
+createContactContainer(content);
 
-createBtnContainer();
+insertTitle(content);
+
+createBtnContainer(content);
 
 const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
-fetchBoard(url);
+fetchBoard(url, false, content);

@@ -2,7 +2,7 @@
   "name": "sudoku",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --config jest.config.mjs",
@@ -24,6 +24,10 @@
     "eslint": "^7.28.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
-    "jest": "^27.1.1"
+    "jest": "^27.1.1",
+    "jsdom": "16.7.0"
+  },
+  "dependencies": {
+    "@jest/globals": "^27.1.1"
   }
 }

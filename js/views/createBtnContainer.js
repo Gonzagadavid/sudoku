@@ -1,5 +1,5 @@
 import createHtmlElement from '../functions/createHtmlElement.js';
-import gameState from '../index.js';
+import gameState from '../main.js';
 import fetchBoard from '../functions/fetchBoard.js';
 
 function nextLevel() {
@@ -23,8 +23,8 @@ function addBtn(parentElement, value) {
   parentElement.appendChild(btn);
 }
 
-export default function createBtnContainer() {
-  const content = document.getElementById('content');
+export default function createBtnContainer(content) {
+  if (!content) return;
   const btnContainer = createHtmlElement('div', { className: 'btn-container' });
   const arrayDifficult = ['EASY', 'MEDIUM', 'HARD', 'RANDOM'];
   arrayDifficult.forEach((dif) => addBtn(btnContainer, dif));

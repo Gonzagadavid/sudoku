@@ -15,6 +15,7 @@
         "import/extensions": "off",
         "import/no-cycle": "off",
         "no-param-reassign": "off",
-        "max-len":["error", { "ignoreComments": true, "code": 100 }]
+        "max-len":["error", { "ignoreComments": true, "code": 100 }],
+        "import/no-extraneous-dependencies": "off"
     }
 }

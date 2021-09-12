@@ -1,6 +1,6 @@
 import createHtmlElement from '../functions/createHtmlElement.js';
 import fetchBoard from '../functions/fetchBoard.js';
-import gameState from '../index.js';
+import gameState from '../main.js';
 
 function restart(event, container) {
   const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
