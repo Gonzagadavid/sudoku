@@ -1,6 +1,6 @@
 import { expect, describe, it } from '@jest/globals';
-import functions from '../js/functions';
-import page from '../jsdom';
+import functions from '../../js/functions';
+import page from '../../jsdom';
 
 global.window.document.body.innerHTML = page.window.document.body.innerHTML;
 
