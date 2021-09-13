@@ -3,11 +3,11 @@ import functions from '../../js/functions';
 import page from '../../jsdom';
 import gameState from '../../js/main.js';
 
-global.window.document.body.innerHTML = page.window.document.body.innerHTML;
-
 const { btnSelect } = functions;
 
 const arrayDifficult = ['EASY', 'MEDIUM', 'HARD', 'RANDOM'];
+
+global.window.document.body.innerHTML = page.window.document.body.innerHTML;
 
 describe('verifica a funcao btnSelect', () => {
   const content = document.getElementById('content');

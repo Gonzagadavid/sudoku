@@ -2,8 +2,6 @@ import { expect, describe, it } from '@jest/globals';
 import functions from '../../js/functions';
 import page from '../../jsdom';
 
-global.window.document.body.innerHTML = page.window.document.body.innerHTML;
-
 const { createHtmlElement } = functions;
 
 const attributes = {
@@ -11,6 +9,8 @@ const attributes = {
   id: 'id-test',
   innerHTML: 'texto de teste',
 };
+
+global.window.document.body.innerHTML = page.window.document.body.innerHTML;
 
 describe('verifica a funcao createHtmlElement', () => {
   it('verifica se ao nao passar paramentro retorna div,'
