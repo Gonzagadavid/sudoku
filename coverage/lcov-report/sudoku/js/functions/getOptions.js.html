@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">26.32% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>5/19</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">26.32% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>5/19</span>
+                <span class='fraction'>21/21</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -76,39 +76,45 @@
 <a name='L17'></a><a href='#L17'>17</a>
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
-<a name='L20'></a><a href='#L20'>20</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">81x</span>
+<span class="cline-any cline-yes">81x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">27x</span>
+<span class="cline-any cline-yes">27x</span>
+<span class="cline-any cline-yes">27x</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >export default function getOptions(x, y, board) {</span></span>
-<span class="cstat-no" title="statement not covered" >  const startX = x &lt; 3 ? 0 : x &lt; 6 ? 3 : 6;</span>
-<span class="cstat-no" title="statement not covered" >  const startY = y &lt; 3 ? 0 : y &lt; 6 ? 3 : 6;</span>
-<span class="cstat-no" title="statement not covered" >  const options = [1, 2, 3, 4, 5, 6, 7, 8, 9];</span>
-<span class="cstat-no" title="statement not covered" >  const usedNumbers = [];</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  for (let index = 0; index &lt; board.length; index += 1) {</span>
-<span class="cstat-no" title="statement not covered" >    usedNumbers.push(board[x][index]);</span>
-<span class="cstat-no" title="statement not covered" >    usedNumbers.push(board[index][y]);</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  for (let xIndex = startX; xIndex &lt; startX + 3; xIndex += 1) {</span>
-<span class="cstat-no" title="statement not covered" >    for (let yIndex = startY; yIndex &lt; startY + 3; yIndex += 1) {</span>
-<span class="cstat-no" title="statement not covered" >      usedNumbers.push(board[xIndex][yIndex]);</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export default function getOptions(x, y, board) {
+  if (board[x][y]) throw new Error('verificao de espaco preenchido');
+&nbsp;
+  const startX = x &lt; 3 ? 0 : x &lt; 6 ? 3 : 6;
+  const startY = y &lt; 3 ? 0 : y &lt; 6 ? 3 : 6;
+  const options = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const usedNumbers = [];
+&nbsp;
+  for (let index = 0; index &lt; board.length; index += 1) {
+    usedNumbers.push(board[x][index]);
+    usedNumbers.push(board[index][y]);
+  }
+&nbsp;
+  for (let xIndex = startX; xIndex &lt; startX + 3; xIndex += 1) {
+    for (let yIndex = startY; yIndex &lt; startY + 3; yIndex += 1) {
+      usedNumbers.push(board[xIndex][yIndex]);
     }
   }
 &nbsp;
@@ -121,7 +127,7 @@
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Sep 12 2021 22:48:22 GMT-0300 (Horário Padrão de Brasília)
+                at Sun Sep 12 2021 23:36:11 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="../../../prettify.js"></script>
