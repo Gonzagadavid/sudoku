@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">28% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/25</span>
+                <span class='fraction'>25/25</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/0</span>
+                <span class='fraction'>5/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">28% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/25</span>
+                <span class='fraction'>25/25</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -82,53 +82,53 @@
 <a name='L23'></a><a href='#L23'>23</a>
 <a name='L24'></a><a href='#L24'>24</a>
 <a name='L25'></a><a href='#L25'>25</a>
-<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L26'></a><a href='#L26'>26</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import createHtmlElement from '../functions/createHtmlElement.js';
-import <span class="fstat-no" title="function not covered" >renderNumber from './renderNumber.js';</span>
-<span class="cstat-no" title="statement not covered" >import clearNumber from './clearNumber.js';</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >function createSpan(number, optionsContainer, element, board) {</span>
-<span class="cstat-no" title="statement not covered" >  const spanAttributes = { className: 'number-option', innerHTML: number };</span>
-<span class="cstat-no" title="statement not covered" >  const span = createHtmlElement('span', spanAttributes);</span>
-  span.addEventListener('click', <span class="fstat-no" title="function not covered" >(event) =&gt; renderNumber(event, element, board));</span>
-<span class="cstat-no" title="statement not covered" >  optionsContainer.appendChild(span);</span>
-<span class="cstat-no" title="statement not covered" >}</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >function createContainer(options, element, board) {</span>
-<span class="cstat-no" title="statement not covered" >  const optionsContainer = createHtmlElement('div', { className: 'options-container' });</span>
-  options.forEach((number) =&gt; createSpan<span class="fstat-no" title="function not covered" >(number, optionsContainer, element, board));</span>
-<span class="cstat-no" title="statement not covered" >  return optionsContainer;</span>
-<span class="cstat-no" title="statement not covered" >}</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >export default function createOptionsContainer(element, options, board) {</span>
-<span class="cstat-no" title="statement not covered" >  const optionsContainer = createContainer(options, element, board);</span>
-<span class="cstat-no" title="statement not covered" >  const clearAttributes = { className: 'number-option', innerHTML: 'Limpar' };</span>
-<span class="cstat-no" title="statement not covered" >  const cleanNumber = createHtmlElement('span', clearAttributes);</span>
-<span class="cstat-no" title="statement not covered" >  cleanNumber.addEventListener('click', (event) =&gt; clearNumber(event, element, board));</span>
+import renderNumber from './renderNumber.js';
+import clearNumber from './clearNumber.js';
+&nbsp;
+function createSpan(number, optionsContainer, element, board) {
+  const spanAttributes = { className: 'number-option', innerHTML: number };
+  const span = createHtmlElement('span', spanAttributes);
+  span.addEventListener('click', (event) =&gt; renderNumber(event, element, board));
+  optionsContainer.appendChild(span);
+}
+&nbsp;
+function createContainer(options, element, board) {
+  const optionsContainer = createHtmlElement('div', { className: 'options-container' });
+  options.forEach((number) =&gt; createSpan(number, optionsContainer, element, board));
+  return optionsContainer;
+}
+&nbsp;
+export default function createOptionsContainer(element, options, board) {
+  const optionsContainer = createContainer(options, element, board);
+  const clearAttributes = { className: 'number-option', innerHTML: 'Limpar' };
+  const cleanNumber = createHtmlElement('span', clearAttributes);
+  cleanNumber.addEventListener('click', (event) =&gt; clearNumber(event, element, board));
   optionsContainer.appendChild(cleanNumber);
   element.appendChild(optionsContainer);
 }
@@ -139,7 +139,7 @@ import <span class="fstat-no" title="function not covered" >renderNumber from '.
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun Sep 12 2021 23:36:11 GMT-0300 (Horário Padrão de Brasília)
+                at Mon Sep 13 2021 21:55:01 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

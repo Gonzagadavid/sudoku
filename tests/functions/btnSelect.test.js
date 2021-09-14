@@ -45,4 +45,13 @@ describe('verifica a funcao btnSelect', () => {
     expect(hardBtn.className).not.toMatch(/selected/);
     expect(randomBtn.className).toMatch(/selected/);
   });
+
+  it('verifica se não tiver botao selecionado ele apenas adiciona sem ocorrer erro', () => {
+    randomBtn.classList.remove('selected');
+    expect(randomBtn.className).not.toMatch(/selected/);
+    gameState.difficulty = 'medium';
+    btnSelect();
+    expect(mediumBtn.className).toMatch(/selected/);
+    expect(randomBtn.className).not.toMatch(/selected/);
+  });
 });
