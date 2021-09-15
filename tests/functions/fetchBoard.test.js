@@ -49,4 +49,14 @@ describe('verifica a funcao fecthBoard', () => {
     expect(document.querySelector('.card-container')).toBeDefined();
     expect(document.querySelectorAll('.card-container')).toHaveLength(1);
   });
+
+  it('verifica se ao ser chamada sem paramentro a requisicao não é feita', async () => {
+    expect(global.fetch).toHaveBeenCalledTimes(0);
+    await fetchBoard(url, false);
+    expect(global.fetch).not.toHaveBeenCalled();
+    expect(global.fetch).toHaveBeenCalledTimes(0);
+    expect(() => {
+      fetchBoard('urlInválida', false);
+    }).not.toThrowError(/A requisão do jogo falhou/);
+  });
 });

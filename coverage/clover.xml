@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631683321511" clover="3.2.0">
-  <project timestamp="1631683321512" name="All files">
-    <metrics statements="356" coveredstatements="315" conditionals="89" coveredconditionals="86" methods="30" coveredmethods="25" elements="475" coveredelements="426" complexity="0" loc="356" ncloc="356" packages="5" files="21" classes="21"/>
+<coverage generated="1631689811944" clover="3.2.0">
+  <project timestamp="1631689811944" name="All files">
+    <metrics statements="356" coveredstatements="318" conditionals="93" coveredconditionals="90" methods="30" coveredmethods="27" elements="479" coveredelements="435" complexity="0" loc="356" ncloc="356" packages="5" files="21" classes="21"/>
     <package name="sudoku">
       <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
       <file name="jsdom.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/jsdom.js">
@@ -42,12 +42,12 @@
       <metrics statements="96" coveredstatements="96" conditionals="44" coveredconditionals="43" methods="7" coveredmethods="7"/>
       <file name="btnSelect.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/js/functions/btnSelect.js">
         <metrics statements="9" coveredstatements="9" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="cond" truecount="2" falsecount="0"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="cond" truecount="0" falsecount="1"/>
-        <line num="6" count="7" type="stmt"/>
+        <line num="1" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="8" type="stmt"/>
+        <line num="3" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="8" type="stmt"/>
+        <line num="5" count="8" type="cond" truecount="0" falsecount="1"/>
+        <line num="6" count="8" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="9" count="1" type="stmt"/>
@@ -65,9 +65,9 @@
       </file>
       <file name="createHtmlElement.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/js/functions/createHtmlElement.js">
         <metrics statements="9" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="1" count="200" type="cond" truecount="2" falsecount="0"/>
-        <line num="2" count="200" type="cond" truecount="1" falsecount="0"/>
-        <line num="3" count="534" type="stmt"/>
+        <line num="1" count="194" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="194" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="536" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -83,15 +83,15 @@
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="10" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="7" count="9" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
+        <line num="9" count="9" type="stmt"/>
+        <line num="10" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="6" type="cond" truecount="1" falsecount="0"/>
         <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="13" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="6" type="cond" truecount="1" falsecount="0"/>
         <line num="14" count="2" type="stmt"/>
-        <line num="15" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
@@ -159,7 +159,7 @@
       </file>
     </package>
     <package name="sudoku.js.views">
-      <metrics statements="187" coveredstatements="146" conditionals="35" coveredconditionals="33" methods="20" coveredmethods="15"/>
+      <metrics statements="187" coveredstatements="149" conditionals="38" coveredconditionals="36" methods="20" coveredmethods="17"/>
       <file name="clearNumber.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/js/views/clearNumber.js">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="cond" truecount="2" falsecount="0"/>
@@ -232,22 +232,22 @@
         <line num="24" count="1" type="stmt"/>
       </file>
       <file name="createClearBtn.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/js/views/createClearBtn.js">
-        <metrics statements="19" coveredstatements="16" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="1"/>
-        <line num="1" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="0" type="stmt"/>
-        <line num="3" count="0" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
+        <metrics statements="19" coveredstatements="19" conditionals="5" coveredconditionals="5" methods="3" coveredmethods="3"/>
+        <line num="1" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="5" count="3" type="stmt"/>
         <line num="6" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="4" type="stmt"/>
+        <line num="11" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="4" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
@@ -331,22 +331,22 @@
       </file>
       <file name="index.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/js/views/index.js">
         <metrics statements="21" coveredstatements="21" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
-        <line num="1" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="2" type="stmt"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
+        <line num="1" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="16" count="3" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
@@ -379,7 +379,7 @@
       </file>
     </package>
     <package name="sudoku.tests.mock">
-      <metrics statements="49" coveredstatements="49" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+      <metrics statements="49" coveredstatements="49" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
       <file name="boards.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/tests/mock/boards.js">
         <metrics statements="37" coveredstatements="37" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="cond" truecount="1" falsecount="0"/>
@@ -421,15 +421,15 @@
         <line num="37" count="1" type="stmt"/>
       </file>
       <file name="fetchMock.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/tests/mock/fetchMock.js">
-        <metrics statements="12" coveredstatements="12" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
-        <line num="1" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="2" count="2" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="3" type="cond" truecount="3" falsecount="0"/>
+        <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <line num="1" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="3" type="cond" truecount="4" falsecount="0"/>
         <line num="9" count="1" type="stmt"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
