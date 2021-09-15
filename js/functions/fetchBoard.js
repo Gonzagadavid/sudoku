@@ -1,7 +1,6 @@
-import views from '../views/index.js';
 import btnSelect from './btnSelect.js';
-
-const { createCardGame, createClearBtn } = views;
+import createCardGame from '../views/createCardGame.js';
+import createClearBtn from '../views/createClearBtn.js';
 
 function clearCard() {
   const content = document.getElementById('content');

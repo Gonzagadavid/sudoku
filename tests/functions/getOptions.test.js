@@ -53,6 +53,6 @@ describe('verifica a funcao getOptions', () => {
 
   it('Ao passar o board e a posicao  ja preenchida um erro e lancado'
   + ' um array com as opcoes corretas', () => {
-    expect(() => getOptions(1, 4, board)).toThrowError(/verificao de espaco preenchido/);
+    expect(() => getOptions(1, 4, board)).toThrowError(/invalid verification/);
   });
 });

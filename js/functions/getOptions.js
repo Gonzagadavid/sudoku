@@ -1,5 +1,5 @@
 export default function getOptions(x, y, board) {
-  if (board[x][y]) throw new Error('verificao de espaco preenchido');
+  if (board[x][y]) throw new Error('invalid verification');
 
   const startX = x < 3 ? 0 : x < 6 ? 3 : 6;
   const startY = y < 3 ? 0 : y < 6 ? 3 : 6;
