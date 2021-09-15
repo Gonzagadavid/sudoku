@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1631681411541" clover="3.2.0">
-  <project timestamp="1631681411542" name="All files">
+<coverage generated="1631683321511" clover="3.2.0">
+  <project timestamp="1631683321512" name="All files">
     <metrics statements="356" coveredstatements="315" conditionals="89" coveredconditionals="86" methods="30" coveredmethods="25" elements="475" coveredelements="426" complexity="0" loc="356" ncloc="356" packages="5" files="21" classes="21"/>
     <package name="sudoku">
       <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="0" coveredmethods="0"/>
@@ -65,9 +65,9 @@
       </file>
       <file name="createHtmlElement.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/js/functions/createHtmlElement.js">
         <metrics statements="9" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="1" count="191" type="cond" truecount="2" falsecount="0"/>
-        <line num="2" count="191" type="cond" truecount="1" falsecount="0"/>
-        <line num="3" count="531" type="stmt"/>
+        <line num="1" count="200" type="cond" truecount="2" falsecount="0"/>
+        <line num="2" count="200" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="534" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
@@ -207,26 +207,26 @@
       <file name="createCardGame.js" path="/home/gonzagadavid/Web-developer/Repositorios-GitHub/sudoku/js/views/createCardGame.js">
         <metrics statements="24" coveredstatements="24" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
         <line num="1" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="2" count="162" type="stmt"/>
-        <line num="3" count="162" type="stmt"/>
-        <line num="4" count="162" type="stmt"/>
-        <line num="5" count="162" type="cond" truecount="2" falsecount="0"/>
-        <line num="6" count="97" type="stmt"/>
-        <line num="7" count="97" type="stmt"/>
+        <line num="2" count="243" type="stmt"/>
+        <line num="3" count="243" type="stmt"/>
+        <line num="4" count="243" type="stmt"/>
+        <line num="5" count="243" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="148" type="stmt"/>
+        <line num="7" count="148" type="stmt"/>
         <line num="8" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="9" count="18" type="stmt"/>
-        <line num="10" count="18" type="stmt"/>
-        <line num="11" count="18" type="stmt"/>
-        <line num="12" count="18" type="stmt"/>
-        <line num="13" count="18" type="stmt"/>
-        <line num="14" count="18" type="stmt"/>
-        <line num="15" count="18" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="27" type="stmt"/>
+        <line num="10" count="27" type="stmt"/>
+        <line num="11" count="27" type="stmt"/>
+        <line num="12" count="27" type="stmt"/>
+        <line num="13" count="27" type="stmt"/>
+        <line num="14" count="27" type="stmt"/>
+        <line num="15" count="27" type="cond" truecount="1" falsecount="0"/>
         <line num="16" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="2" type="stmt"/>
-        <line num="18" count="2" type="stmt"/>
-        <line num="19" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="3" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="cond" truecount="1" falsecount="0"/>
         <line num="22" count="1" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
