@@ -17,6 +17,11 @@ global.fetch = jest.fn(fetchMock);
 describe('verifica a funcao createBtnContainer', () => {
   const content = document.getElementById('content');
 
+  it('verifica se ao chamar a funcao sem parametro nao ocorre erro', () => {
+    createBtnContainer();
+    expect(document.querySelector('.btn-container')).toBeNull();
+  });
+
   it('verifica se ao chamar a funcao os botoes de nivel sao criados', () => {
     createBtnContainer(content);
     const btnContainer = document.querySelector('.btn-container');
