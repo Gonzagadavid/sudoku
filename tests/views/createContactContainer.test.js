@@ -14,7 +14,7 @@ describe('verifica a funcao createContactContainer', () => {
 
   it('verifica se a funcao nao falha ao ser chamada sem parametro', () => {
     expect(() => createContactContainer()).not.toThrow();
-    createContactContainer();
+    createContactContainer(true);
     expect(document.querySelector('.contact-container')).toBeNull();
     expect(document.querySelector('a')).toBeNull();
   });

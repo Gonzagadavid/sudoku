@@ -2,7 +2,7 @@ import createHtmlElement from '../functions/createHtmlElement.js';
 import fetchBoard from '../functions/fetchBoard.js';
 import gameState from '../main.js';
 
-function restart(event, container) {
+function restart(container) {
   const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
   container.remove();
   fetchBoard(url, true);
@@ -16,7 +16,7 @@ export default function finishedContainer() {
   container.appendChild(createHtmlElement('p', { innerHTML: text }));
   const btnAttributes = { innerHTML: 'Jogar novamente', className: 'btn-finished' };
   const btn = createHtmlElement('button', btnAttributes);
-  btn.addEventListener('click', (event) => restart(event, container));
+  btn.addEventListener('click', () => restart(container));
   container.appendChild(btn);
   content.appendChild(container);
 }

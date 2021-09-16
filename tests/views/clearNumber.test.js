@@ -21,7 +21,7 @@ describe('Verifica a funcao clearNumber', () => {
     expect(content.firstChild.id).toBe('x=1 y=7');
     expect(content.firstChild.innerHTML).toBe('3');
     expect(board[1][7]).toBe(3);
-    clearNumber({}, element, boardCopy);
+    clearNumber(element, boardCopy);
     expect(content.firstChild.id).toBe('x=1 y=7');
     expect(content.firstChild.innerHTML).toBe('');
     expect(board[1][7]).toBe(0);
