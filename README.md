@@ -18,7 +18,8 @@
 - Através do desse array de arrays recebido, o card do jogo é criado dinamicamente;
 - Ao clicar em um dos espaços a serem preenchidos, é verificado as opções de números para o mesmo lugar e renderizado como opção;
 - Quando escolhido um número pelo usuário, o seu local no array também é atualizado, e verificado se o preenchimento está completo;
-- Ao clicar no botão clearboard o card será limpo somente no lugares preenchidos pelo usuário, proporcionando uma nova tentativa.
+- Ao clicar no botão clearboard o card será limpo somente no lugares preenchidos pelo usuário, proporcionando uma nova tentativa;
+- 100% de cobertura de testes com jest jsdom;
 
 Espero que tenha jogado, finalizado e gostado da experiência!
 
