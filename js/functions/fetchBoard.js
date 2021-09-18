@@ -4,8 +4,8 @@ import createClearBtn from '../views/createClearBtn.js';
 
 function clearCard() {
   const content = document.getElementById('content');
-  content.lastChild.remove();
-  content.lastChild.remove();
+  if (content.lastChild) content.lastChild.remove();
+  if (content.lastChild) content.lastChild.remove();
 }
 
 export default async function fetchBoard(url, clear, content) {

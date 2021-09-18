@@ -22,8 +22,8 @@ describe('verifica a funcao createBtnContainer', () => {
     expect(document.querySelector('.btn-container')).toBeNull();
   });
 
-  it('verifica se ao chamar a funcao os botoes de nivel sao criados', () => {
-    createBtnContainer(content);
+  it('verifica se ao chamar a funcao os botoes de nivel sao criados', async () => {
+    await createBtnContainer(content);
     const btnContainer = document.querySelector('.btn-container');
     const difficultBtns = document.querySelectorAll('.btn-difficult');
     expect(btnContainer.tagName).toBe('DIV');

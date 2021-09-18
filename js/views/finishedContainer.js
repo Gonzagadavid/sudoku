@@ -10,7 +10,7 @@ function restart(container) {
 
 export default function finishedContainer() {
   const content = document.getElementById('content');
-  const container = createHtmlElement('div', { className: 'finished-contaienr' });
+  const container = createHtmlElement('div', { className: 'finished-container' });
   container.appendChild(createHtmlElement('h2', { innerHTML: 'Finished' }));
   const text = `Parabéns! Você concluiu no level ${gameState.difficulty.toUpperCase()}.`;
   container.appendChild(createHtmlElement('p', { innerHTML: text }));

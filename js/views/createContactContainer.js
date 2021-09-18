@@ -1,7 +1,7 @@
 import createHtmlElement from '../functions/createHtmlElement.js';
 
 export default function createContactContainer(content) {
-  if (!content || !(content instanceof HTMLElement)) return;
+  if (!content) return;
 
   const container = createHtmlElement('div', { className: 'contact-container' });
   const linkAttributes = {

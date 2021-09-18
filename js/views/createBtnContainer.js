@@ -3,8 +3,9 @@ import gameState from '../main.js';
 import fetchBoard from '../functions/fetchBoard.js';
 
 function nextLevel() {
+  const content = document.getElementById('content');
   const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
-  fetchBoard(url, true);
+  fetchBoard(url, true, content);
 }
 
 function renderDifficult(event) {
@@ -16,10 +17,10 @@ function addBtn(parentElement, value) {
   const btnAttributes = {
     className: 'btn-difficult',
     value,
-    onclick: (e) => renderDifficult(e),
     innerHTML: value,
   };
   const btn = createHtmlElement('button', btnAttributes);
+  btn.addEventListener('click', (e) => renderDifficult(e));
   parentElement.appendChild(btn);
 }
 

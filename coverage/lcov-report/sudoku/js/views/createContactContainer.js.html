@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/20</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>4/4</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/20</span>
+                <span class='fraction'>20/20</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -78,41 +78,41 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import createHtmlElement from '../functions/createHtmlEleme<span class="branch-0 cbranch-no" title="branch not covered" >nt.js';</span>
-<span class="cstat-no" title="statement not covered" ></span>
-export default function createContac<span class="branch-0 cbranch-no" title="branch not covered" >tContainer(content) {</span>
-<span class="cstat-no" title="statement not covered" >  if (!content || !(content instanceof HTMLElement)) return;</span>
-<span class="cstat-no" title="statement not covered" ></span>
-<span class="cstat-no" title="statement not covered" >  const container = createHtmlElement('div', { className: 'contact-container' });</span>
-<span class="cstat-no" title="statement not covered" >  const linkAttributes = {</span>
-<span class="cstat-no" title="statement not covered" >    innerHTML: '&lt;i class="fab fa-github"&gt;&lt;/i&gt;',</span>
-<span class="cstat-no" title="statement not covered" >    href: 'https://github.com/Gonzagadavid/sudoku',</span>
-<span class="cstat-no" title="statement not covered" >  };</span>
-<span class="cstat-no" title="statement not covered" >  const link = createHtmlElement('a', linkAttributes);</span>
-<span class="cstat-no" title="statement not covered" >  container.appendChild(link);</span>
-<span class="cstat-no" title="statement not covered" >  const textAtribttues = {</span>
-<span class="cstat-no" title="statement not covered" >    className: 'contact-text',</span>
-<span class="cstat-no" title="statement not covered" >    innerHTML: 'by David Gonzaga',</span>
-<span class="cstat-no" title="statement not covered" >  };</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import createHtmlElement from '../functions/createHtmlElement.js';
+&nbsp;
+export default function createContactContainer(content) {
+  if (!content) return;
+&nbsp;
+  const container = createHtmlElement('div', { className: 'contact-container' });
+  const linkAttributes = {
+    innerHTML: '&lt;i class="fab fa-github"&gt;&lt;/i&gt;',
+    href: 'https://github.com/Gonzagadavid/sudoku',
+  };
+  const link = createHtmlElement('a', linkAttributes);
+  container.appendChild(link);
+  const textAtribttues = {
+    className: 'contact-text',
+    innerHTML: 'by David Gonzaga',
+  };
   const text = createHtmlElement('p', textAtribttues);
   container.appendChild(text);
   content.appendChild(container);
@@ -124,7 +124,7 @@ export default function createContac<span class="branch-0 cbranch-no" title="bra
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Sep 16 2021 19:48:50 GMT-0300 (Horário Padrão de Brasília)
+                at Sat Sep 18 2021 00:19:59 GMT-0300 (Horário Padrão de Brasília)
             </div>
         </div>
         <script src="../../../prettify.js"></script>

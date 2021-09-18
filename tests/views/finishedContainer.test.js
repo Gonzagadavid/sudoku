@@ -22,6 +22,6 @@ describe('verifica a funcao finishedContainer', () => {
     const event = new MouseEvent('click');
     const btn = document.querySelector('.btn-finished');
     btn.dispatchEvent(event);
-    expect(document.querySelector('finished-contaienr')).toBeNull();
+    expect(document.querySelector('finished-container')).toBeNull();
   });
 });
