@@ -1,6 +1,8 @@
 import createHtmlElement from '../functions/createHtmlElement.js';
 
-export default function createContactContainer() {
+export default function createContactContainer(content) {
+  if (!content) return;
+
   const container = createHtmlElement('div', { className: 'contact-container' });
   const linkAttributes = {
     innerHTML: '<i class="fab fa-github"></i>',
@@ -14,5 +16,5 @@ export default function createContactContainer() {
   };
   const text = createHtmlElement('p', textAtribttues);
   container.appendChild(text);
-  return container;
+  content.appendChild(container);
 }

@@ -3,7 +3,7 @@ import clearNumber from './clearNumber.js';
 
 function clearBoard(event, board) {
   const tryNumbers = document.querySelectorAll('.try');
-  tryNumbers.forEach((element) => clearNumber(event, element, board));
+  tryNumbers.forEach((element) => clearNumber(element, board));
 }
 
 export default function createClearBtn(board) {

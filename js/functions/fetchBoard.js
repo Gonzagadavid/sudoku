@@ -1,15 +1,15 @@
+import btnSelect from './btnSelect.js';
 import createCardGame from '../views/createCardGame.js';
 import createClearBtn from '../views/createClearBtn.js';
-import btnSelect from './btnSelect.js';
 
 function clearCard() {
   const content = document.getElementById('content');
-  content.lastChild.remove();
-  content.lastChild.remove();
+  if (content.lastChild) content.lastChild.remove();
+  if (content.lastChild) content.lastChild.remove();
 }
 
-export default async function fetchBoard(url, clear) {
-  const content = document.getElementById('content');
+export default async function fetchBoard(url, clear, content) {
+  if (!content) return;
   const response = await fetch(url);
   if (!response.ok) throw new Error('A requisão do jogo falhou');
   const objBoard = await response.json();
