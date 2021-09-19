@@ -8,5 +8,5 @@ export default function renderOptions(event, board) {
   const x = +element.id.replace(/(x=)|y=\d/g, '');
   const y = +element.id.replace(/(y=)|x=\d/g, '');
   const options = getOptions(x, y, board);
-  createOptionsContainer(element, options, board);
+  createOptionsContainer(element, options, board, y);
 }

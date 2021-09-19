@@ -15,8 +15,9 @@ function createContainer(options, element, board) {
   return optionsContainer;
 }
 
-export default function createOptionsContainer(element, options, board) {
+export default function createOptionsContainer(element, options, board, y) {
   const optionsContainer = createContainer(options, element, board);
+  if (y < 3) optionsContainer.classList.add('left');
   const clearAttributes = { className: 'number-option', innerHTML: 'Limpar' };
   const cleanNumber = createHtmlElement('span', clearAttributes);
   cleanNumber.addEventListener('click', (event) => clearNumber(event, element, board));
