@@ -7,7 +7,8 @@
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest --config jest.config.mjs",
     "coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --config jest.config.mjs --coverage",
-    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --config jest.config.mjs --watch"
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules npx jest --config jest.config.mjs --watch",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
