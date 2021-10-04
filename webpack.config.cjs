@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: [
     './js/functions/createHtmlElement.js',
     './js/functions/checkCompleted.js',
