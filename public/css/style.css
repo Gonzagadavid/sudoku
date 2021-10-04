@@ -27,7 +27,7 @@ button {
  }
 
 #content {
-  width: 98.5vw;
+  width: 100vw;
   height: 100vh;
   background: linear-gradient(0deg, rgb(45, 132, 225), rgb(0, 30, 56));
   display: flex;
