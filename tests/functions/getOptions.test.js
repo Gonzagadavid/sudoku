@@ -50,9 +50,4 @@ describe('verifica a funcao getOptions', () => {
   + ' um array com as opcoes corretas', () => {
     expect(getOptions(7, 7, board)).toEqual([3]);
   });
-
-  it('Ao passar o board e a posicao  ja preenchida um erro e lancado'
-  + ' um array com as opcoes corretas', () => {
-    expect(() => getOptions(1, 4, board)).toThrowError(/invalid verification/);
-  });
 });
