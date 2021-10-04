@@ -1,4 +1,4 @@
-import createHtmlElement from '../functions/createHtmlElement.js';
+import createHtmlElement from '../functions/createHtmlElement.js.js.js';
 
 export default function createContactContainer(content) {
   if (!content) return;
@@ -7,7 +7,6 @@ export default function createContactContainer(content) {
   const linkAttributes = {
     innerHTML: '<i class="fab fa-github"></i>',
     href: 'https://github.com/Gonzagadavid/sudoku',
-    target: '_blank',
   };
   const link = createHtmlElement('a', linkAttributes);
   container.appendChild(link);

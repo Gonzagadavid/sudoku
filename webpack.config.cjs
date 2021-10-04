@@ -21,12 +21,25 @@ module.exports = {
     './js/views/insertTitle.js',
     './js/views/renderNumber.js',
     './js/main.js',
+    './public/css/style.css',
   ],
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'main.js',
+    publicPath: './build/',
   },
   resolve: {
     extensions: ['.js'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+      },
+    ],
   },
 };
