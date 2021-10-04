@@ -19,7 +19,7 @@ button {
 
 .title {
    font-family: sudoku;
-   font-size: 90px;
+   font-size: 70px;
    margin: 0;
    color: white;
    letter-spacing: 15px;
@@ -27,14 +27,13 @@ button {
  }
 
 #content {
-  width: 100vw;
+  width: 98.5vw;
   height: 100vh;
   background: linear-gradient(0deg, rgb(45, 132, 225), rgb(0, 30, 56));
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 15px 0;
 }
 
 .contact-container {
@@ -73,15 +72,15 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 464px;
-  height: 472px;
+  width: 450px;
+  height: 454px;
   background-color: black;
   box-shadow: 0 0 20px black;
 }
 
 .row-card {
   display: flex;
-  width: 460px;
+  width: 446px;
 }
 
 .row-card:nth-child(3) .number {
@@ -104,10 +103,10 @@ button {
  align-items: center;
  justify-content: center;
  border: rgb(135, 169, 233) solid 0.05px;
- width: 50px;
- height: 50px;
+ width: 48px;
+ height: 48px;
  position: relative;
- font-size: 35px;
+ font-size: 30px;
  color: rgb(0, 0, 0);
  font-family: roboto;
  font-weight: lighter;
