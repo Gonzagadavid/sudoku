@@ -20,6 +20,7 @@
 - Quando escolhido um número pelo usuário, o seu local no array também é atualizado, e verificado se o preenchimento está completo;
 - Ao clicar no botão clearboard o card será limpo somente no lugares preenchidos pelo usuário, proporcionando uma nova tentativa;
 - 100% de cobertura de testes com jest jsdom;
+- Utilizado webpack para build no javascript e css;
 
 Espero que tenha jogado, finalizado e gostado da experiência!
 
