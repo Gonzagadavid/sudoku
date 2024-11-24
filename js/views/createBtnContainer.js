@@ -4,7 +4,7 @@ import fetchBoard from '../functions/fetchBoard.js';
 
 function nextLevel() {
   const content = document.getElementById('content');
-  const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
+  const url = `https://sugoku.onrender.com/board?difficulty=${gameState.difficulty}`;
   fetchBoard(url, true, content);
 }
 
