@@ -8,8 +8,8 @@ import fetchMock from '../mock/fetchMock.js';
 
 const { fetchBoard } = functions;
 
-const url = 'https://sugoku.herokuapp.com/board?difficulty=easy';
-const url2 = 'https://sugoku.herokuapp.com/board?difficulty=medium';
+const url = 'https://sugoku.onrender.com/board?difficulty=easy';
+const url2 = 'https://sugoku.onrender.com/board?difficulty=medium';
 
 global.window.document.body.innerHTML = page.window.document.body.innerHTML;
 

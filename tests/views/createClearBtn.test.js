@@ -11,7 +11,7 @@ const { createClearBtn } = views;
 const { fetchBoard } = functions;
 const { board } = boards;
 const boardCopy = [...board];
-const url = 'https://sugoku.herokuapp.com/board?difficulty=easy';
+const url = 'https://sugoku.onrender.com/board?difficulty=easy';
 
 global.window.document.body.innerHTML = page.window.document.body.innerHTML;
 global.fetch = jest.fn(fetchMock);

@@ -14,7 +14,7 @@ export const gameInit = () => {
 
   createBtnContainer(content);
 
-  const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
+  const url = `https://sugoku.onrender.com/board?difficulty=${gameState.difficulty}`;
   fetchBoard(url, false, content);
 };
 

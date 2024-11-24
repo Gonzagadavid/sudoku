@@ -3,7 +3,7 @@ import fetchBoard from '../functions/fetchBoard.js';
 import gameState from '../main.js';
 
 function restart(container) {
-  const url = `https://sugoku.herokuapp.com/board?difficulty=${gameState.difficulty}`;
+  const url = `https://sugoku.onrender.com/board?difficulty=${gameState.difficulty}`;
   container.remove();
   fetchBoard(url, true);
 }
